@@ -1,0 +1,53 @@
+# Backend
+backend/node_modules/
+backend/.env
+backend/uploads/
+backend/certificates/
+backend/models/yolov3*
+backend/.DS_Store
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Database
+*.sql.backup
+postgres_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# Distribution
+dist/
+build/
+
+# Misc
+.env.local
+.env.*.local
+backend/yolov3u.pt

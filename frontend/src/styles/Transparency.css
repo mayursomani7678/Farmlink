@@ -1,0 +1,168 @@
+/* Transparency */
+.farmer-transparency {
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+}
+
+.farmer-transparency h1 {
+  color: #2d8a3d;
+  margin-bottom: 30px;
+}
+
+.transactions-list {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-list th {
+  background-color: #2d8a3d;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.transactions-list td {
+  padding: 15px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.transactions-list tr:hover {
+  background-color: #f9f9f9;
+}
+
+.transaction-trace {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trace-flow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.trace-step {
+  background: linear-gradient(135deg, #2d8a3d, #1f6829);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.trace-step h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.trace-step p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.trace-step .location {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.arrow {
+  font-size: 32px;
+  color: #2d8a3d;
+  margin: 0 20px;
+}
+
+.quality-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.metric-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #2d8a3d;
+}
+
+.metric-card h4 {
+  color: #2d8a3d;
+  margin-bottom: 15px;
+}
+
+.metric-card p {
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.metric-card .total {
+  font-weight: bold;
+  color: #2d8a3d;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Price Comparison */
+.price-comparison {
+  padding: 30px;
+}
+
+.price-comparison h2 {
+  color: #2d8a3d;
+  margin-bottom: 20px;
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.comparison-table tr:hover {
+  background-color: #fffbf0;
+}
+
+@media (max-width: 768px) {
+  .trace-flow {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    margin: 20px 0;
+  }
+}
